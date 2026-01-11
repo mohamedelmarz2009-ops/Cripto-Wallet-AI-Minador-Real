@@ -517,20 +517,20 @@ export const Dashboard: React.FC<DashboardProps> = ({ user, appState, updateUser
                                     
                                     <div className="space-y-4">
                                         <div>
-                                            <label className="text-xs text-gray-400 uppercase font-bold mb-2 block">Algoritmo de Minado</label>
-                                            <div className="w-full bg-slate-900 p-3 rounded-lg text-sm text-gray-300 border border-slate-700 flex justify-between">
-                                                <span>SHA-256 (Bitcoin)</span>
-                                                <span className="text-green-500 text-xs">OPTIMAL</span>
-                                            </div>
-                                        </div>
-                                        <div>
                                             <label className="text-xs text-gray-400 uppercase font-bold mb-2 block">Intensidad de IA</label>
                                             <div className="w-full h-2 bg-slate-700 rounded-full overflow-hidden">
-                                                <div className={`h-full bg-gradient-to-r from-blue-500 to-purple-500 w-[${miningActive ? '90%' : '0%'}] transition-all duration-1000`}></div>
+                                                <div className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-1000" style={{ width: miningActive ? '90%' : '0%' }}></div>
                                             </div>
                                             <div className="flex justify-between mt-1 text-xs text-gray-500">
                                                 <span>Low</span>
                                                 <span>Quantum High</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <label className="text-xs text-gray-400 uppercase font-bold mb-2 block">Algoritmo de Minado</label>
+                                            <div className="w-full bg-slate-900 p-3 rounded-lg text-sm text-gray-300 border border-slate-700 flex justify-between">
+                                                <span>SHA-256 (Bitcoin)</span>
+                                                <span className="text-green-500 text-xs">OPTIMAL</span>
                                             </div>
                                         </div>
                                         
