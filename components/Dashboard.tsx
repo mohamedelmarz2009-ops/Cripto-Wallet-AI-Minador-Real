@@ -474,10 +474,10 @@ export const Dashboard: React.FC<DashboardProps> = ({ user, appState, updateUser
                                 <div className="flex-1 p-6 font-mono text-sm relative z-10 flex flex-col justify-end">
                                     <div className="flex-1 overflow-y-auto scrollbar-hide space-y-1 pb-4" ref={logContainerRef}>
                                         <div className="text-blue-500 mb-4 opacity-80">
-                                            > Initializing Neural Network... OK<br/>
-                                            > Connecting to Satellite Uplink... OK<br/>
-                                            > Bypass Firewall Level 4... OK<br/>
-                                            > System Ready. Waiting for command.<br/>
+                                            &gt; Initializing Neural Network... OK<br/>
+                                            &gt; Connecting to Satellite Uplink... OK<br/>
+                                            &gt; Bypass Firewall Level 4... OK<br/>
+                                            &gt; System Ready. Waiting for command.<br/>
                                             ----------------------------------------
                                         </div>
                                         {logs.map((log, i) => (
@@ -486,7 +486,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ user, appState, updateUser
                                                 {log}
                                             </div>
                                         ))}
-                                        {!miningActive && <div className="text-yellow-500 animate-pulse mt-2">> SYSTEM IDLE. PRESS START TO INITIATE.</div>}
+                                        {!miningActive && <div className="text-yellow-500 animate-pulse mt-2">&gt; SYSTEM IDLE. PRESS START TO INITIATE.</div>}
                                     </div>
                                     
                                     {/* Balance Overlay */}
